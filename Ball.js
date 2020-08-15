@@ -7,15 +7,11 @@ class Ball {
         density:1.4
   
     }
-    this.image = loadImage("sprites/PaperBall.png")
+    this.image = loadImage("sprites/Paperball.png")
     this.x= x;
     this.y= y;
     this.radius=radius;
 
-    //this.body = Bodies.rectangle(x, y, width , height,{isStatic:true} );
-
-    //this.body = Bodies.circle(this.x,this.y,this.radius,options);
-    
     World.add(world, this.body);
   }
   display(){
@@ -32,5 +28,5 @@ class Ball {
     imageMode(CENTER);
     image(this.image, 0, 0, this.width, this.height);
     pop();
-  }
+  } 
 };
